@@ -11,5 +11,11 @@ Content-Type: application/json
 DELETE http://localhost:3000/delete-collection/{{database}}/{{collection}}
 Content-Type: application/json
 ###
+POST {{domain}}:{{port}}/insert/{{database}}/{{collection}}
+Content-Type: application/json
 
+{
+    "item": "steak",
+    "food_group": "proteins"
+}
 
