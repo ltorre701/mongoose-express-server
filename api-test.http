@@ -6,6 +6,9 @@
 ###
 GET {{domain}}:{{port}}/find/{{database}}/{{collection}}
 Content-Type: application/json
+###
+@delete-id = 673bc7a5967151b27da07d59
+DELETE {{domain}}:{{port}}/delete/{{database}}/{{collection}}/{{delete-id}}
 
 ### Delete a Collection from a Database
 DELETE http://localhost:3000/delete-collection/{{database}}/{{collection}}
@@ -16,6 +19,8 @@ Content-Type: application/json
 
 {
     "item": "steak",
-    "food_group": "proteins"
+    "food_group": "proteins",
+    "price_in_usd": 12,
+    "test": "This is a test"
 }
 
